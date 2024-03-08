@@ -470,4 +470,19 @@ img {
   .r1feature {
     text-align: center;
   }
+  .vid {
+	width: 100%;
+	margin-bottom: -150px;
+	margin-top: 200px;
+	display: flex;
+	height: 800px;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+  }
   
+  .vid video {
+	box-shadow: 15px 15px rgb(26, 144, 208);
+	width: 60%;
+	height: auto;
+  }
