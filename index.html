@@ -1,0 +1,940 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./src/input.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <title>ACM-Website</title>
+
+</head>
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+
+<body class="bg-gray-100 ">
+
+  <!-- start of navbar section  -->
+
+  <nav class="bg-gray-100 sticky  w-full z-20 top-0 start-0 border-b-2 border-gray-300 shadow-lg">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between md:justify-around mx-auto p-4">
+      <a href="/index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="/assets/images/logo/acm.png" class="h-16" alt="acm-logo">
+      </a>
+      <div class="flex md:order-2 md:hidden space-x-3 md:space-x-0 rtl:space-x-reverse">
+        <button data-collapse-toggle="navbar-sticky" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-200  dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-sticky" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+      </div>
+      <div class="items-center justify-center hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+        <ul
+          class="flex flex-col p-4 my-2 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg text-center bg-tranparent md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0   ">
+          <li class="py-2">
+            <a href="index.html"
+              class="block py-2 px-3 text-black text-lg rounded hover:bg-gray-400 md:hover:bg-transparent  md:p-0  hover:text-blue-500"
+              aria-current="page">Home</a>
+          </li>
+          <li class="py-2">
+            <a href="#about"
+              class="block py-2 px-3 text-black text-lg rounded hover:bg-gray-400 md:hover:bg-transparent  md:p-0  hover:text-blue-500"
+              aria-current="page">About Us</a>
+          </li>
+          <li class="py-2">
+            <a href="#event"
+              class="block py-2 px-3 text-black text-lg rounded hover:bg-gray-400 md:hover:bg-transparent  md:p-0  hover:text-blue-500">Event</a>
+          </li>
+          <li class="py-2">
+            <a href="#team"
+              class="block py-2 px-3 text-black text-lg rounded hover:bg-gray-400 md:hover:bg-transparent  md:p-0 hover:text-blue-500 ">Our
+              Team</a>
+          </li>
+          <li class="py-2">
+            <a href="#gallery"
+              class="block py-2 px-3 text-black text-lg rounded hover:bg-gray-400 md:hover:bg-transparent  md:p-0 hover:text-blue-500 ">Gallery</a>
+          </li>
+          <li class="bg-gradient-to-r from-cyan-500 to-blue-500 px-4 py-2 rounded-full">
+            <a href="#contact"
+              class="block py-2 px-3 text-black text-lg rounded  md:hover:bg-transparent  md:p-0 hover:text-white   ">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end of navbar section  -->
+
+
+  <!-- start of hero section  -->
+
+
+  <section class="text-gray-600 body-font -mt-6 md:-mt-2 rounded-b-3xl bg-cover bg-center bg-no-repeat shadow-2xl"
+    style="background-image: url('./assets/images/svg/9496304.png'); ">
+    <div class="container mx-auto w-4/5 flex px-5 py-24 md:flex-row flex-col items-center md:gap-24">
+      <div class=" md:w-1/2  md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <div class="justify-center" data-aos="fade-up" data-aos-delay="400">
+          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-black flex justify-center ">
+            <!-- <img
+              class="w-40" src="./assets/images/logo/acm.png" alt=""> -->
+          </h1>
+          <p class="mb-8 leading-relaxed text-center text-3xl items-center align-middle font-bold text-gray-900">
+            Chitkara ACM Student
+            Chapter
+            <br>
+            <span class="text-2xl font-medium w-full">
+              Advancing Computing as a Science & Profession
+          </p>
+          </span>
+        </div>
+        <div class="flex justify-center mx-auto" data-aos="fade-up">
+          <a href="#contact"
+            class="mr-4 text-gray-900 bg-gray-100 py-2 px-4 focus:outline-none hover:bg-gray-200 rounded-xl text-lg font-semibold shadow-xl">Contact
+            us</a>
+          <a href="#about"
+            class="text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-700 rounded-xl text-lg font-semibold flex justify-center items-center align-middle gap-2 shadow-xl">About
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="lg:max-w-lg lg:w-[450px] md:w-1/2 w-5/6 rounded-full shadow-2xl bg-white" data-aos="fade-left"
+        data-aos-delay="400">
+        <img class="object-cover object-center rounded-full" alt="hero" src="./assets/images/logo/acm.png">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- end of hero section -->
+
+  <!-- start of about section -->
+
+  <section class="text-gray-600 body-font" id="about">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center" data-aos="fade-up"
+        data-aos-delay="400">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">About <strong
+            class="text-blue-600">Us</strong></h1>
+        <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+
+        <p class="lg:w-1/2 w-full leading-relaxed text-gray-600 text-justify">Chitkara ACM Student chapter is a student
+          organization affiliated with the Association of Applied Technology (ACM). Our goal is to create a powerful
+          platform for students to connect, learn and exchange knowledge. We organize various events such as technical
+          training, non-technical training and entertainment. ACM student chapters play an important role in fostering
+          communication and collaboration within the computer science community and expanding these connections to the
+          broader computing community.</p>
+      </div>
+      <div class="flex flex-wrap  md:mx-20">
+
+        <div class="xl:w-1/3 md:w-1/2 p-4" data-aos="flip-left" data-aos-delay="400">
+          <div class="border border-gray-200 p-6 rounded-lg  shadow-lg">
+            <div
+              class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-blue-400 mb-4">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-6 h-6" viewBox="0 0 24 24">
+                <path d="M12 19l7-7 3 3-7 7-7-7 3-3 4 4z"></path>
+                <path d="M5 12h.01M12 5h.01M19 12h.01"></path>
+              </svg>
+
+            </div>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Peer Learning</h2>
+            <p class="leading-relaxed text-base">As teachers and students, communicate with peers, exchange knowledge,
+              and foster personal growth through collaboraation</p>
+          </div>
+        </div>
+
+        <div class="xl:w-1/3 md:w-1/2 p-4" data-aos="flip-left" data-aos-delay="400">
+          <div class="border border-gray-200 p-6 rounded-lg  shadow-lg">
+            <div
+              class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100  text-blue-400 mb-4">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-6 h-6" viewBox="0 0 24 24">
+                <rect x="4" y="6" width="16" height="14" rx="2" ry="2"></rect>
+                <line x1="4" y1="10" x2="20" y2="10"></line>
+                <line x1="4" y1="14" x2="20" y2="14"></line>
+                <line x1="4" y1="18" x2="20" y2="18"></line>
+              </svg>
+
+            </div>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Digital Library</h2>
+            <p class="leading-relaxed text-base">The ACM Digital Library is a platform that provides research, discovery
+              and communication opportunities</p>
+          </div>
+        </div>
+
+        <div class="xl:w-1/3 md:w-1/2 p-4" data-aos="flip-left" data-aos-delay="400">
+          <div class="border border-gray-200 p-6 rounded-lg shadow-lg">
+            <div
+              class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100  text-blue-400 mb-4">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-6 h-6" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="9" cy="10" r="1"></circle>
+                <circle cx="15" cy="10" r="1"></circle>
+                <path d="M9 14h.01M15 14h.01M12 16h.01"></path>
+              </svg>
+
+            </div>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Exciting Events</h2>
+            <p class="leading-relaxed text-base">Join us for a fun, exciting and unforgettable moment. Check out our
+              calendar for exciting upcoming events!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end of about section -->
+
+  <!-- start of faculties advisor section -->
+
+  <section class="text-gray-600 body-font" id="faculty">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="text-center mb-20">
+        <h1 class="sm:text-3xl text-2xl font-bold title-font text-gray-900 mb-4 ">Faculty Advisor</h1>
+        <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">Meet our esteemed faculty advisor
+        </p>
+        <div class="flex mt-6 justify-center">
+          <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+        </div>
+      </div>
+      <div class="flex justify-center flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6 gap-14"
+        data-aos="flip-right" data-aos-delay="400">
+        <div class="p-4 md:w-[600px] flex flex-col text-center items-center shadow-xl py-10  bg-gray-100 rounded-xl">
+          <div
+            class="shadow-2xl w-20 h-20 inline-flex items-center justify-center rounded-full overflow-hidden bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+            <img src="./assets/images/logo/faculty/Ravneet-mam.jpg" alt="">
+          </div>
+          <div class="flex-grow">
+            <h2 class="text-blue-500 text-xl title-font font-bold mb-3 tracking-wide">Dr. Ravneet Kaur</h2>
+            <p class="leading-relaxed text-base font-semibold"><span class="font-bold text-lg">"</span>
+              Chitkara ACM Student Chapter provides a unique
+              experience to the students to interact with both academy and industry fellows, thus setting the stage for
+              students to broaden their minds and use their technical skills for future opportunities. This chapter
+              provides
+              ample opportunities to students to show their talent in various competitions like hackathons , coding
+              competitions and expert talks. This Chapter has always continuously challenged students to push their
+              boundaries and develop their skills.<span class="font-bold text-lg">"</span></p>
+
+          </div>
+        </div>
+        <div class="p-4 md:w-[600px] flex flex-col text-center items-center shadow-xl py-10  bg-gray-100 rounded-xl"
+          data-aos="flip-right" data-aos-delay="400">
+          <div
+            class=" shadow-2xl w-20 h-20 inline-flex items-center justify-center rounded-full overflow-hidden bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+            <img src="./assets/images/logo/faculty/IMG_5144.jpg" alt="">
+          </div>
+          <div class="flex-grow">
+            <h2 class="text-blue-500 text-xl title-font font-bold mb-3 tracking-wide">Dr. Saravjeet Singh</h2>
+            <p class="leading-relaxed text-base font-semibold"><span class="font-bold text-lg">"</span>
+              Since 2010, the Chitkara ACM Student Chapter,
+              a beacon of technological innovation, has ignited students' interest in advanced technological
+              developments.
+              This chapter provides various platforms to enhance knowledge and develop problem-solving skills through
+              activities such as hackathons, expert talks, and competitive competitions. Due to the continuous efforts
+              of
+              the members of the ACM chapter, this chapter has received different national and international
+              awards.<span class="font-bold text-lg">"</span> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- end of faculties advisor section -->
+
+  <!-- start of top events section -->
+
+  <section class="text-gray-600 body-font" id="event">
+    <div class="text-center ">
+      <h1 class="sm:text-3xl text-2xl font-bold title-font text-gray-900 mb-4 ">Top Events</h1>
+      <div class="flex mt-6 justify-center">
+        <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+      </div>
+    </div>
+    <div class="container px-5 py-20 mx-auto">
+      <div class="flex flex-wrap -m-4">
+        <div class="xl:w-1/4 md:w-1/2 p-4" data-aos="zoom-in" data-aos-delay="400">
+          <div class="bg-gray-100 p-6 rounded-lg shadow-lg md:h-[650px]">
+            <img class="h-70 rounded w-full object-cover object-center mb-6"
+              src="./assets/images/gallery/topevents/content.jpg" alt="content">
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Codathon 2k24</h2>
+            <p class="leading-relaxed md:text-sm">Codathon 2k24 was the event in which students Embrace the coding
+              extravaganza for thrilling problem-solving, collaboration, and creativity. It does not matter you are a
+              coding wizard or a novice explorer, face challenges that push boundaries. Shine in the spirit of
+              innovation. All were Ready to code their way to victory and Secure your spot now and embark on a coding
+              adventure like never before! It was mesmerising event full of coding buzz.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4" data-aos="zoom-in" data-aos-delay="400">
+          <div class="bg-gray-100 p-6 rounded-lg shadow-lg md:h-[650px]">
+            <img class="h-70 rounded w-full object-cover object-center mb-6"
+              src="./assets/images/gallery/topevents/content (1).jpg" alt="content">
+
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Design O Tech.</h2>
+            <p class="leading-relaxed md:text-sm">The DESIGN-OTECH 2.0, held on September 26, 20203 at Chitkara
+              University
+              Einstein Hall , was a resounding success, uniting creative minds, tech enthusiasts and innovative
+              thinkers. Participants took on Hackathon Challenges, enhancing HTML codes with CSS to transform provided
+              content. Teams collaborated across diverse backgrounds, yielding innovative designs.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4" data-aos="zoom-in" data-aos-delay="400">
+          <div class="bg-gray-100 p-6 rounded-lg shadow-lg md:h-[650px]">
+            <img class="h-70 rounded w-full object-cover object-center mb-6"
+              src="./assets/images/gallery/topevents/content (2).jpg" alt="content">
+
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Hour Of Code</h2>
+            <p class="leading-relaxed md:text-sm">"Hour of Code," the ACM's annual event, unfolded with a burst of
+              excitement at 10 am. Kicking off with a lively balloon-bursting game, participants dove into a captivating
+              drag-and-drop challenge, uploading certificates for analysis.The event concluded within the stipulated
+              boundaries, leaving happy faces and a sense of accomplishment.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4" data-aos="zoom-in" data-aos-delay="400">
+          <div class="bg-gray-100 p-6 rounded-lg shadow-lg md:h-[650px]">
+            <img class="h-70 rounded w-full object-cover object-center mb-6"
+              src="./assets/images/gallery/topevents/content (4).jpg" alt="content">
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">CodeCrafters</h2>
+            <p class="leading-relaxed md:text-sm">Code Crafters 2k23 was an event held at Chitkara University on April
+              12,
+              2023. With the "Critical Thinking for Innovative Solutions to Overcome Problems," it aimed to foster
+              coding skills among students. The event provided a platform for students to showcase their coding
+              abilities while promoting camaraderie among participants. It featured challenging coding rounds where
+              students could demonstrate their critical thinking and problem-solving skills.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end of top events section -->
+
+  <!-- start of our team section -->
+
+  <section class="bg-transparent shadow-2xl md:mx-8 rounded-xl" id="team">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
+      <div class="mx-auto mb-8 max-w-screen-sm lg:mb-16">
+        <h2 class="mb-10 text-4xl tracking-tight font-extrabold text-gray-900">Our team</h2>
+        <p class="font-light text-gray-500 sm:text-xl "></p>
+        <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+
+      </div>
+      <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div class="text-center text-gray-500 rounded-xl p-4 shadow-xl" data-aos="zoom-in-up" data-aos-delay="400">
+          <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="./assets/images/members/3.jpeg" alt="Riddhi Gera">
+          <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 ">
+            Riddhi Gera
+          </h3>
+          <p>Chairperson</p>
+          <ul class="flex justify-center mt-4 space-x-5">
+
+            <li>
+              <a href="#" class="text-gray-900 hover:text-gray-900 ">
+                <img width="30" src="./assets/images/svg/insta.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-[#ea4c89] hover:text-gray-900 ">
+                <img src="./assets/images/svg/linkedin_3128329.png" width="25" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="text-center text-gray-500 rounded-xl p-4 shadow-xl" data-aos="zoom-in-up" data-aos-delay="400">
+          <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="./assets/images/members/2.jpeg" alt="Arshnoor">
+          <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 ">
+            Arshnoor
+          </h3>
+          <p>Vice Chairperson</p>
+          <ul class="flex justify-center mt-4 space-x-4">
+
+            <li>
+              <a href="#" class="text-gray-900 hover:text-gray-900 ">
+                <img width="30" src="./assets/images/svg/insta.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-[#ea4c89] hover:text-gray-900 ">
+                <img src="./assets/images/svg/linkedin_3128329.png" width="25" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="text-center text-gray-500 rounded-xl p-4 shadow-xl" data-aos="zoom-in-up" data-aos-delay="400">
+          <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="./assets/images/members/4.jpeg" alt="Ayush Goyal">
+          <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 ">
+            Ayush Goyal
+          </h3>
+          <p>Secretary</p>
+          <ul class="flex justify-center mt-4 space-x-4">
+
+            <li>
+              <a href="#" class="text-gray-900 hover:text-gray-900 ">
+                <img width="30" src="./assets/images/svg/insta.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-[#ea4c89] hover:text-gray-900 ">
+                <img src="./assets/images/svg/linkedin_3128329.png" width="25" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="text-center text-gray-500 rounded-xl p-4 shadow-xl" data-aos="zoom-in-up" data-aos-delay="400">
+          <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="./assets/images/members/5.jpeg" alt="Livarpit Sandhu">
+          <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 ">
+            Livarpit Sandhu
+          </h3>
+          <p>Treasurer</p>
+          <ul class="flex justify-center mt-4 space-x-4">
+
+            <li>
+              <a href="#" class="text-gray-900 hover:text-gray-900 ">
+                <img width="30" src="./assets/images/svg/insta.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-[#ea4c89] hover:text-gray-900 ">
+                <img src="./assets/images/svg/linkedin_3128329.png" width="25" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="text-center text-gray-500 rounded-xl p-4 shadow-xl" data-aos="zoom-in-up" data-aos-delay="400">
+          <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="./assets/images/members/6.jpeg" alt="Parth Awasthi">
+          <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 ">
+            Parth Awasthi
+          </h3>
+          <p>Membership Chair</p>
+          <ul class="flex justify-center mt-4 space-x-4">
+
+            <li>
+              <a href="#" class="text-gray-900 hover:text-gray-900 ">
+                <img width="30" src="./assets/images/svg/insta.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-[#ea4c89] hover:text-gray-900 ">
+                <img src="./assets/images/svg/linkedin_3128329.png" width="25" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="text-center text-gray-500 rounded-xl p-4 shadow-xl" data-aos="zoom-in-up" data-aos-delay="400">
+          <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="./assets/images/members/7.jpeg" alt="Aryan Inguz">
+          <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 ">
+            <a href="#">Aryan Inguz</a>
+          </h3>
+          <p>Web Head</p>
+          <ul class="flex justify-center mt-4 space-x-4">
+
+            <li>
+              <a href="#" class="text-gray-900 hover:text-gray-900 ">
+                <img width="30" src="./assets/images/svg/insta.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-[#ea4c89] hover:text-gray-900 ">
+                <img src="./assets/images/svg/linkedin_3128329.png" width="25" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="text-center text-gray-500 rounded-xl p-4 shadow-xl" data-aos="zoom-in-up" data-aos-delay="400">
+          <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="./assets/images/members/15.jpeg" alt="Mridul Gupta">
+          <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 ">
+            Mridul Gupta
+          </h3>
+          <p>Tech Head</p>
+          <ul class="flex justify-center mt-4 space-x-4">
+
+            <li>
+              <a href="#" class="text-gray-900 hover:text-gray-900 ">
+                <img width="30" src="./assets/images/svg/insta.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-[#ea4c89] hover:text-gray-900 ">
+                <img src="./assets/images/svg/linkedin_3128329.png" width="25" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="text-center text-gray-500 rounded-xl p-4 shadow-xl" data-aos="zoom-in-up" data-aos-delay="400">
+          <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="./assets/images/members/daksh.png" alt="Daksh Gupta">
+          <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 ">
+            Daksh Gupta
+          </h3>
+          <p>Executive Head</p>
+          <ul class="flex justify-center mt-4 space-x-4">
+            <li>
+              <a href="#" class="text-gray-900 hover:text-gray-900 ">
+                <img width="30" src="./assets/images/svg/insta.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-[#ea4c89] hover:text-gray-900 ">
+                <img src="./assets/images/svg/linkedin_3128329.png" width="25" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="text-center text-gray-500 rounded-xl p-4 shadow-xl" data-aos="zoom-in-up" data-aos-delay="400">
+          <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="./assets/images/members/mehar.png" alt="Mehar Bhatia">
+          <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 ">
+            Mehar Bhatia
+          </h3>
+          <p>Executive head</p>
+          <ul class="flex justify-center mt-4 space-x-4">
+
+            <li>
+              <a href="#" class="text-gray-900 hover:text-gray-900 ">
+                <img width="30" src="./assets/images/svg/insta.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-[#ea4c89] hover:text-gray-900 ">
+                <img src="./assets/images/svg/linkedin_3128329.png" width="25" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="text-center text-gray-500 rounded-xl p-4 shadow-xl" data-aos="zoom-in-up" data-aos-delay="400">
+          <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="./assets/images/members/14.jpeg" alt="Kalash Jha">
+          <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 ">
+            kalash Jha
+          </h3>
+          <p>Media & social Media Head</p>
+          <ul class="flex justify-center mt-4 space-x-4">
+
+            <li>
+              <a href="#" class="text-gray-900 hover:text-gray-900 ">
+                <img width="30" src="./assets/images/svg/insta.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-[#ea4c89] hover:text-gray-900 ">
+                <img src="./assets/images/svg/linkedin_3128329.png" width="25" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="text-center text-gray-500 rounded-xl p-4 shadow-xl" data-aos="zoom-in-up" data-aos-delay="400">
+          <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="./assets/images/members/13.jpeg" alt="Madhav Dhawan">
+          <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 ">
+            Madhav Dhawan
+          </h3>
+          <p>Promotion Head</p>
+          <ul class="flex justify-center mt-4 space-x-4">
+
+            <li>
+              <a href="#" class="text-gray-900 hover:text-gray-900 ">
+                <img width="30" src="./assets/images/svg/insta.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-[#ea4c89] hover:text-gray-900 ">
+                <img src="./assets/images/svg/linkedin_3128329.png" width="25" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="text-center text-gray-500 rounded-xl p-4 shadow-xl" data-aos="zoom-in-up" data-aos-delay="400">
+          <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="./assets/images/members/11.jpeg" alt="MD Sayad Ali">
+          <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 ">
+            MD Sayad Ali
+          </h3>
+          <p>Graphics Head</p>
+          <ul class="flex justify-center mt-4 space-x-4">
+
+            <li>
+              <a href="#" class="text-gray-900 hover:text-gray-900 ">
+                <img width="30" src="./assets/images/svg/insta.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-[#ea4c89] hover:text-gray-900 ">
+                <img src="./assets/images/svg/linkedin_3128329.png" width="25" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="text-center text-gray-500 rounded-xl p-4 shadow-xl" data-aos="zoom-in-up" data-aos-delay="400">
+          <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="./assets/images/members/10.jpeg" alt="Vanshika">
+          <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 ">
+            Vanshika
+          </h3>
+          <p>Content Head</p>
+          <ul class="flex justify-center mt-4 space-x-4">
+
+            <li>
+              <a href="#" class="text-gray-900 hover:text-gray-900 ">
+                <img width="30" src="./assets/images/svg/insta.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-[#ea4c89] hover:text-gray-900 ">
+                <img src="./assets/images/svg/linkedin_3128329.png" width="25" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end of our team section -->
+
+  <!-- start of our Achievements section -->
+
+  <div class="text-center mt-20" id="achivement">
+    <h1 class="sm:text-3xl text-2xl font-bold title-font text-gray-900 mb-4 ">Achievements</h1>
+    <div class="flex mt-6 justify-center">
+      <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+    </div>
+  </div>
+
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 mx-auto flex flex-wrap">
+      <div class="flex relative pt-10 pb-10 sm:items-center md:w-2/3 mx-auto" data-aos="fade-up" data-aos-delay="600">
+        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+          <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+        </div>
+        <div
+          class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">
+          1</div>
+        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+          <div
+            class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-12 h-12" viewBox="0 0 24 24">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+            <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Shooting Stars</h2>
+            <p class="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard
+              cliche palo santo offal.</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto" data-aos="fade-up" data-aos-delay="600">
+        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+          <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+        </div>
+        <div
+          class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">
+          2</div>
+        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+          <div
+            class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-12 h-12" viewBox="0 0 24 24">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+            </svg>
+          </div>
+          <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+            <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">The Catalyzer</h2>
+            <p class="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard
+              cliche palo santo offal.</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto" data-aos="fade-up" data-aos-delay="600">
+        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+          <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+        </div>
+        <div
+          class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">
+          3</div>
+        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+          <div
+            class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-12 h-12" viewBox="0 0 24 24">
+              <circle cx="12" cy="5" r="3"></circle>
+              <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
+            </svg>
+          </div>
+          <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+            <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">The 400 Blows</h2>
+            <p class="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard
+              cliche palo santo offal.</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto" data-aos="fade-up" data-aos-delay="600">
+        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+          <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+        </div>
+        <div
+          class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">
+          4</div>
+        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+          <div
+            class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-12 h-12" viewBox="0 0 24 24">
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+          <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+            <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Neptune</h2>
+            <p class="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard
+              cliche palo santo offal.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end of our Achievements section -->
+
+  <!-- start of gallery section -->
+  <div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-10 my-8" id="gallery">
+    <h1 class="text-3xl font-bold text-center">Our Gallery Of Excellence</h1>
+    <p class="text-center text-gray-500">We have stored some brilliant memories and excellence</p>
+    <div class="flex mt-6 justify-center">
+      <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+    </div>
+    <div class="-m-1 w-full md:flex flex-wrap md:flex-nowrap md:-m-2 pt-20">
+      <div class="flex md:w-1/2 flex-wrap">
+        <div class="md:w-1/2 p-1 md:p-2  " data-aos="zoom-in-down" data-aos-delay="300">
+          <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center shadow-2xl"
+            src="./assets/images/gallery/gallery (1).jpg" />
+        </div>
+        <div class="md:w-1/2 p-1 md:p-2" data-aos="zoom-in-down" data-aos-delay="300">
+          <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center shadow-2xl"
+            src="./assets/images/gallery/gallery (3).jpg" />
+        </div>
+        <div class="w-full h-[43%] p-1 md:p-2" data-aos="zoom-in-down" data-aos-delay="300">
+          <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center shadow-2xl"
+            src="./assets/images/gallery/gallery (4).jpg" />
+        </div>
+      </div>
+      <div class="flex md:w-1/2 flex-wrap">
+        <div class="w-full p-1 md:p-2" data-aos="zoom-in-down" data-aos-delay="300">
+          <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center shadow-2xl"
+            src="./assets/images/gallery/gallery (2).jpg" />
+        </div>
+        <div class="w-full p-1 md:p-2" data-aos="zoom-in-down" data-aos-delay="300">
+          <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center shadow-2xl"
+            src="./assets/images/gallery/gallery (5).jpg" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-24">
+    <div class="-m-1 w-full md:flex flex-wrap md:flex-nowrap md:-m-2">
+      <div class="flex md:w-1/2 flex-wrap">
+        <div class="md:w-1/2 p-1 md:p-2" data-aos="zoom-in-down" data-aos-delay="300">
+          <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center shadow-2xl"
+            src="./assets/images/gallery/gallery.jpg" />
+        </div>
+        <div class="md:w-1/2 p-1 md:p-2" data-aos="zoom-in-down" data-aos-delay="300">
+          <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center shadow-2xl"
+            src="./assets/images/gallery/Photo by Magicle.jpg" />
+        </div>
+        <div class="w-full h-[43%] p-1 md:p-2" data-aos="zoom-in-down" data-aos-delay="300">
+          <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center shadow-2xl"
+            src="./assets/images/gallery/Photo by Lorenzo Herrera.jpg" />
+        </div>
+      </div>
+      <div class="flex md:w-1/2 flex-wrap">
+        <div class="w-full p-1 md:p-2" data-aos="zoom-in-down" data-aos-delay="300">
+          <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center shadow-2xl"
+            src="./assets/images/gallery/Photo by Martin Sanchez.jpg" />
+        </div>
+        <div class="w-full p-1 md:p-2" data-aos="zoom-in-down" data-aos-delay="300">
+          <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center shadow-2xl"
+            src="./assets/images/gallery/Photo by Minh Pham.jpg" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- end of gallery section-->
+
+  <!-- start of contact section -->
+
+
+
+  <section id="contact">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+      <div class="mb-4 flex justify-center">
+        <div class="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12">
+          <h2 class="font-heading mb-4 font-bold tracking-tight text-gray-900  text-3xl sm:text-5xl">
+            Contact <span class="text-blue-600">Us</span>
+
+          </h2>
+          <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex items-center"></div>
+        </div>
+      </div>
+
+      <div class="flex items-stretch justify-center">
+        <div class="grid md:grid-cols-2">
+          <div class="h-full pr-6">
+            <p class="mt-3 mb-12 text-lg text-gray-700 ">
+              ACM is the world's largest academic and census organization and aims to increase the level and visibility
+              of ACM's activities worldwide.
+            </p>
+            <ul class="mb-6 md:mb-0">
+              <li class="flex">
+                <div class="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="h-6 w-6">
+                    <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z">
+                    </path>
+                  </svg>
+                </div>
+                <div class="ml-4 mb-4">
+                  <h3 class="mb-2 text-lg font-medium leading-6 text-gray-900">Our Location
+                  </h3>
+                  <p class="text-gray-800 ">Newton Block</p>
+                  <p class="text-gray-800 ">Chitkara University, Rajpura</p>
+                </div>
+              </li>
+              <li class="flex">
+                <div class="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="h-6 w-6">
+                    <path
+                      d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2">
+                    </path>
+                    <path d="M15 7a2 2 0 0 1 2 2"></path>
+                    <path d="M15 3a6 6 0 0 1 6 6"></path>
+                  </svg>
+                </div>
+                <div class="ml-4 mb-4">
+                  <h3 class="mb-2 text-lg font-medium leading-6 text-gray-900">Contact
+                  </h3>
+
+                  <p class="text-gray-600 ">Mail:</p>
+                </div>
+              </li>
+              <li class="flex">
+                <div class="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="h-6 w-6">
+                    <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
+                    <path d="M12 7v5l3 3"></path>
+                  </svg>
+                </div>
+                <div class="ml-4 mb-4">
+                  <h3 class="mb-2 text-lg font-medium leading-6 text-gray-900 ">Working
+                    hours</h3>
+                  <p class="text-gray-600 ">Monday - saturday: 09:00 - 17:00</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="card h-fit max-w-6xl p-5 md:p-12" id="form">
+            <h2 class="mb-4 text-2xl font-bold">Ready to Get Started?</h2>
+            <form id="contactForm">
+              <div class="mb-6">
+                <div class="mx-0 mb-1 sm:mb-4">
+                  <div class="mx-0 mb-1 sm:mb-4">
+                    <label for="name" class="pb-1 text-xs uppercase tracking-wider"></label><input type="text" id="name"
+                      autocomplete="given-name" placeholder="Your name"
+                      class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                      name="name">
+                  </div>
+                  <div class="mx-0 mb-1 sm:mb-4">
+                    <label for="email" class="pb-1 text-xs uppercase tracking-wider"></label><input type="email"
+                      id="email" autocomplete="email" placeholder="Your email address"
+                      class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                      name="email">
+                  </div>
+                </div>
+                <div class="mx-0 mb-1 sm:mb-4">
+                  <label for="textarea" class="pb-1 text-xs uppercase tracking-wider"></label><textarea id="textarea"
+                    name="textarea" cols="30" rows="5" placeholder="Write your message..."
+                    class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"></textarea>
+                </div>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="w-full bg-blue-800 text-white px-6 py-3 font-xl rounded-md sm:mb-0">Send
+                  Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of contact section  -->
+
+  <!-- start of footer section -->
+
+
+
+  <footer class="text-gray-600 body-font px-16 mt-10 rounded-t-2xl bg-gray-200">
+    <div class="container px-5 py-4 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <img src="./assets/images/logo/acm.png" alt="" width="70">
+        <span class="ml-3 text-xl">ACM</span>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023 —
+        <a href="https://chitkara.acm.org/" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">ACM</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+            viewBox="0 0 24 24">
+            <path
+              d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+            </path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"
+            class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none"
+              d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </footer>
+
+  <!-- end of footer section -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>
